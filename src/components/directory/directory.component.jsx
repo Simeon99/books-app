@@ -2,6 +2,9 @@ import React from "react";
 
 import MenuItem from '../menu-item/menu-item.component';
 
+import background from "../../images/books.jpg";
+import aboutWriter from "../../images/about-writer.jpg"
+import myEKnjige from "../../images/myEKnjige.jpg"
 import './directory.styles.scss'
 
 class Directory extends React.Component{
@@ -24,24 +27,24 @@ class Directory extends React.Component{
                     linkUrl: 'shop/jackets'
                   },
                   {
-                    title: 'sneakers',
-                    imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+                    title: 'o autoru',
+                    imageUrl: aboutWriter,
                     id: 3,
-                    linkUrl: 'shop/sneakers'
+                    linkUrl: 'oAutoru'
                   },
                   {
-                    title: 'womens',
-                    imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+                    title: 'e-knjige',
+                    imageUrl: background,
                     size: 'large',
                     id: 4,
-                    linkUrl: 'shop/womens'
+                    linkUrl: 'eknji'
                   },
                   {
-                    title: 'mens',
-                    imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+                    title: 'moje e-knjige',
+                    imageUrl: myEKnjige,
                     size: 'large',
                     id: 5,
-                    linkUrl: 'shop/mens'
+                    linkUrl: 'mojeKnjige'
                   }
             ]
 

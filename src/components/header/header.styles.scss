@@ -3,12 +3,24 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
+    background-color: #000032;
+
+    .background-image{
+      width: 96px;
+      height: 100%;
+      
+      background-position: center;
+      background-size: cover;
+      
+     
+    }
   
     .logo-container {
       height: 100%;
       width: 70px;
       padding: 25px;
+      
     }
   
     .options {
@@ -17,9 +29,15 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+
   
       .option {
+        color: white;
         padding: 10px 15px;
+
+        &:hover{
+          color: #FFD700;
+        }
       }
     }
   }
