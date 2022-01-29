@@ -1,0 +1,42 @@
+.moje-e-knjige{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 20px;
+    // border: black 2px;
+    height: auto;
+    border-radius: 5px;
+    // border-style: solid;
+    background-color: rgba(0, 0, 0, 0.096);
+
+    .image{
+        height: 200px;
+        width: 150px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 5px;
+        
+    }
+    .collection-footer{
+
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width: 650px;
+    
+        .name{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .opis{
+            margin-top: 20px;
+        }
+      
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}

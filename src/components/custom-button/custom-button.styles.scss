@@ -19,5 +19,23 @@
       color: black;
       border: 1px solid black;
     }
+    &.is-golden{
+      background-color: #000032;
+
+      &:hover{
+        background-color: white;
+      color: #000032;
+      border: 1px solid #000032;
+      }
+    }
+
+    &.is-negative{
+      background-color: red;
+      &:hover{
+        background-color: white;
+      color: red;
+      border: 1px solid #000032;
+      }
+    }
   }
   

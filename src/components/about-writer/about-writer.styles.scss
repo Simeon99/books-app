@@ -1,0 +1,27 @@
+.about-writer{
+    display: flex;
+    flex-direction: column;
+
+    margin: 50px;
+    text-align: justify;
+
+    .bigrafija{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .knjiga{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 5px;
+        display: list-item;  
+        list-style-type: disc;              
+        list-style-position: inside;
+    }
+
+    .kontakt{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}

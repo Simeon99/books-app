@@ -5,6 +5,7 @@ import MenuItem from '../menu-item/menu-item.component';
 import background from "../../images/books.jpg";
 import aboutWriter from "../../images/about-writer.jpg"
 import myEKnjige from "../../images/myEKnjige.jpg"
+import eRacun from "../../images/add-paiing.jpg"
 import './directory.styles.scss'
 
 class Directory extends React.Component{
@@ -21,10 +22,10 @@ class Directory extends React.Component{
                     linkUrl: 'shop/hats'
                   },
                   {
-                    title: 'jackets',
-                    imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+                    title: 'Dodaj račun',
+                    imageUrl: eRacun,
                     id: 2,
-                    linkUrl: 'shop/jackets'
+                    linkUrl: 'dodajRacun'
                   },
                   {
                     title: 'o autoru',

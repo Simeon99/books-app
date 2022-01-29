@@ -11,7 +11,7 @@ const Header = (props) => {
     }
 
     function logMeOut() {
-        fetch("/logout", opts)
+        fetch("/api/logout", opts)
         .then((response) => {
             props.removeToken()
         }).catch((error) => {
@@ -36,11 +36,11 @@ const Header = (props) => {
             
             </Link>
             <div className="options">
-                <Link className="option" to='/shop'>
+                <Link className="option" to='/eknji'>
                     E-KNJIGE
                 </Link>
 
-                <Link className="option" to='/shop'>
+                <Link className="option" to='/oAutoru'>
                     KONTAKT
                 </Link>
             {
