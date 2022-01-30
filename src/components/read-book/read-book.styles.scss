@@ -1,3 +1,15 @@
 .read-book{
-    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.123);
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        width: 490px;
+        justify-content: space-evenly;
+
+    }
 }

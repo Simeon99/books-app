@@ -16,11 +16,20 @@ class Subscription extends React.Component {
 
     componentDidMount() {
         console.log(this.props.match.params.knjigaId)
-        fetch(`/api/knjige/${this.props.match.params.knjigaId}`)
+        var token = sessionStorage.getItem('token');
+        const opts = {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                'Authorization': `Bearer ${token}`, 
+            }
+        }
+
+        fetch(`/api/knjige/${this.props.match.params.knjigaId}`,opts)
             .then(res => {
                 if (res.status === 200) return res.json();
                 else {
-                    swal("Greška!", "Došlo je do kreške pri kreiranju naloga.", "error");
+                    swal("Greška!", "Došlo je do greške pokušajte da se ulogujete ponovo.", "error");
                 }
             })
             .then(data => {

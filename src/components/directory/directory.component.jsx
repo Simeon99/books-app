@@ -6,6 +6,7 @@ import background from "../../images/books.jpg";
 import aboutWriter from "../../images/about-writer.jpg"
 import myEKnjige from "../../images/myEKnjige.jpg"
 import eRacun from "../../images/add-paiing.jpg"
+import registracija from '../../images/registracija.jpg'
 import './directory.styles.scss'
 
 class Directory extends React.Component{
@@ -15,11 +16,11 @@ class Directory extends React.Component{
         this.state = {
 
             sections:[
-                {
-                    title: 'hats',
-                    imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+                  {
+                    title: 'Kreiranje naloga',
+                    imageUrl: registracija,
                     id: 1,
-                    linkUrl: 'shop/hats'
+                    linkUrl: 'signIn'
                   },
                   {
                     title: 'Dodaj račun',

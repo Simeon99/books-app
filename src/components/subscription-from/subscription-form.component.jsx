@@ -48,7 +48,7 @@ class SubscriptionForm extends React.Component{
         })
         .then(data =>{
 
-            if(typeof data.msg !== 'string') swal("Čestitamo !", "Uspešno ste kreirali račun: "+data.msg, "success");
+            if(typeof data.msg !== 'string') swal("Čestitamo !", "Uspešno ste se pretplatili na knjigu. Ostalo vam je još: "+data.msg+" RSD na računu.", "success");
             else  swal("Greška!", "Došlo je do greške pri plaćanju: "+data.msg, "error");
         })
         .catch(error => {
